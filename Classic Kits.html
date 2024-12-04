@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Kits</title>
+    <style>
+        /* Basic styles for the body */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header styles */
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        /* Navigation menu */
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            background-color: #004080;
+            overflow: hidden;
+        }
+nav ul li {
+            float: left;
+        }
+
+        nav ul li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav ul li a:hover {
+            background-color: #00264d;
+        }
+
+        /* Gallery section */
+        #gallery {
+            background-color: #e6f2ff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #gallery h2 {
+            color: #003366;
+            margin-bottom: 30px;
+        }
+
+         .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .gallery img {
+            max-width: 100%;
+            border: 5px solid #004080;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Menu section */
+        #menu {
+            background-color: #cce6ff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #menu h2 {
+            color: #003366;
+            margin-bottom: 30px;
+        }
+
+        table {
+            margin: 0 auto;
+            width: 80%;
+         border-collapse: collapse;
+        }
+
+  table, th, td {
+            border: 2px solid #003366;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #003366;
+            color: white;
+        }
+
+        td {
+            background-color: #e6f2ff;
+        }
+
+        /* About Us section */
+        #about {
+            background-color: #b3d1ff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        #about h2 {
+            color: #003366;
+        }
+
+        #about p {
+            font-size: 1.2em;
+            line-height: 1.5;
+            margin: 0 auto;
+            width: 70%;
+        }
+        /* Contact Us section */
+        #contact {
+            background-color: #99c2ff;
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        #contact h2 {
+            color: #003366;
+            margin-bottom: 30px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        input, textarea {
+            padding: 10px;
+            font-size: 1.1em;
+            border: 2px solid #003366;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #003366;
+            color: white;
+            padding: 10px;
+            font-size: 1.2em;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+   background-color: #00264d;
+        }
+   /* Responsive design */
+        @media (max-width: 768px) {
+            nav ul li {
+                float: none;
+                text-align: center;
+            }
+
+            table, th, td {
+                font-size: 0.9em;
+            }
+
+            .gallery {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Classic Kits</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="kit1.jpg" alt="Classic Kit 1">
+            <img src="kit2.jpg" alt="Classic Kit 2"> 
+            <img src="kit3.jpg" alt="Classic Kit 3">
+            <img src="kit4.jpg" alt="Classic Kit 4">
+            <img src="kit5.jpg" alt="Classic Kit 5">
+            <img src="kit6.jpg" alt="Classic Kit 6">
+        </div>
+    </section>
+ <section id="menu">
+        <h2>Menu</h2>
+        <table>
+            <tr>
+                <th>Item</th>
+                <th>Price</th>
+            </tr>
+            <tr>
+                <td>Classic Kit 1</td>
+                <td>$100</td>
+            </tr>
+            <tr>
+                <td>Classic Kit 2</td>
+                <td>$150</td>
+            </tr>
+            <tr>
+                <td>Classic Kit 3</td>
+                <td>$200</td>
+            </tr>
+            <tr>
+                <td>Classic Kit 4</td>
+                <td>$250</td>
+            </tr>
+            <tr>
+                <td>Classic Kit 5</td>
+                <td>$300</td>
+            </tr>
+            <tr>
+                <td>Classic Kit 6</td>
+                <td>$350</td>
+            </tr>
+        </table>
+    </section>
+    <section id="about">
+  <h2>About Us</h2>
+        <p>We offer a variety of classic kits for enthusiasts and collectors. Our kits are carefully curated to ensure the highest quality and authenticity.</p>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
